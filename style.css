@@ -1,0 +1,16 @@
+
+body {
+    background-image: url("image\ 19.svg");
+    background-color: white;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+}
+
+
+img {
+	display: grid;
+	/* gap: 1em; */
+	grid-template-rows: 10fr;
+	grid-auto-flow: column;
+	/* width: 1000px; */
+}
