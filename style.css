@@ -1,16 +1,26 @@
 
+
 body {
-    background-image: url("image\ 19.svg");
-    background-color: white;
+    z-index: 5;
+    /* background-image: url("image\ 19.svg"); */
+    background-image: url("image\ 26.png");
     background-size: 100vw;
     background-repeat: no-repeat;
 }
 
+/* 
+.firstimg {
+    width: 500px;
+    margin-left: 12px; 
+    padding-top: 12px;
+} */
 
-img {
-	display: grid;
-	/* gap: 1em; */
-	grid-template-rows: 10fr;
-	grid-auto-flow: column;
-	/* width: 1000px; */
+.firstimg {
+    position: relative;
+width: 100px;
+   display: grid;
+   grid-template-columns: repeat(11, 1fr);
+   grid-template-rows: repeat(8, 5vw);
+   grid-row-gap: 75px;
+   grid-column-gap: 15px;
 }
