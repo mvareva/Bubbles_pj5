@@ -1,15 +1,17 @@
 
+@media (min-width: 600px) {
+	:root { --spacing: 32px; }
 
 body {
     z-index: 5;
     /* background-image: url("image\ 19.svg"); */
-    background-image: url("image\ 26.png");
-    background-size: 100vw;
+    background-image: url("Property\ 1=Call.png");
+    background-size: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-/* 
+/*
 .firstimg {
     width: 500px;
     margin-left: 12px; 
@@ -18,11 +20,10 @@ body {
 
 .firstimg {
     position: relative;
-width: 100px;
    display: grid;
    grid-template-columns: repeat(11, 1fr);
    grid-template-rows: repeat(8, 5vw);
-   grid-row-gap: 58px;
+   grid-row-gap: 3.2vw;
 /*    grid-column-gap: 15px;*/
 }
 
@@ -30,3 +31,63 @@ img {
     padding-left: 5%;
     padding-right: 5%;
 }
+
+img.popped {
+    width: 161px;
+}
+
+.background {
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 80px;
+    height:auto; 
+    margin-top: 5px
+}
+
+}
+
+@media (max-width: 600px) {
+	:root { --spacing: 32px; }
+    body {
+        z-index: 5;
+        /* background-image: url("image\ 19.svg"); */
+        background-image: url("iPhone\ 14\ Plus\ -\ 1.png");
+        background-size: 100vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    /*
+    .firstimg {
+        width: 500px;
+        margin-left: 12px; 
+        padding-top: 12px;
+    } */
+    
+    .firstimg {
+        position: relative;
+       display: grid;
+       grid-template-columns: repeat(11, 1fr);
+       grid-template-rows: repeat(8, 24vw);
+       grid-row-gap: 3.1vw;
+    /*    grid-column-gap: 15px;*/
+    }
+    
+    img {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    img.popped {
+        width: 161px;
+    }
+    
+    .background {
+        padding-left: 1%;
+        padding-right: 1%;
+        width: 80px;
+        height:auto; 
+        margin-top: 5px
+    }
+    }
+    

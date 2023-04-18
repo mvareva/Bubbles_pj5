@@ -1,0 +1,35 @@
+
+
+body {
+    z-index: 5;
+    /* background-image: url("image\ 19.svg"); */
+    background-image: url("Property\ 1=Main1.png");
+    background-size: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*
+.firstimg {
+    width: 500px;
+    margin-left: 12px; 
+    padding-top: 12px;
+} */
+
+.firstimg {
+    position: relative;
+   display: grid;
+   grid-template-columns: repeat(11, 1fr);
+   grid-template-rows: repeat(8, 5vw);
+   grid-row-gap: 58px;
+/*    grid-column-gap: 15px;*/
+}
+
+img {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+img.popped {
+    width: 160px;
+}
