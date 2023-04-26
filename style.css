@@ -4,8 +4,7 @@
 
 body {
     z-index: 5;
-    /* background-image: url("image\ 19.svg"); */
-    background-image: url("Property\ 1=Call.png");
+    background-image: url("original_d9992cac98f6dbb759cfc4f2901063ed.gif");
     background-size: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,13 +18,24 @@ body {
 } */
 
 .firstimg {
-    position: relative;
+    z-index: 6;
+    position: fixed;
    display: grid;
-   grid-template-columns: repeat(11, 1fr);
-   grid-template-rows: repeat(8, 5vw);
-   grid-row-gap: 3.2vw;
+   width: 20px;
+   grid-template-columns: repeat(13, 1fr);
+   grid-template-rows: repeat(8, 4.2vw);
+   grid-row-gap: 3.1vw;
 /*    grid-column-gap: 15px;*/
 }
+
+/* .grid1 {
+    position: fixed;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(12, 1.8vw);
+    grid-row-gap: 58px;
+} */
+
 
 img {
     padding-left: 5%;
@@ -33,26 +43,75 @@ img {
 }
 
 img.popped {
-    width: 161px;
+    width: 140px;
 }
 
 .background {
-    padding-left: 1%;
-    padding-right: 1%;
-    width: 80px;
+    z-index: 8;
+    position: relative;
+    padding-left: 0.2px;
+    padding-right: 0.2px;
+    padding-top: 93vh;
+    width: 60px;
     height:auto; 
-    margin-top: 5px
+}
+
+
+.opener {
+z-index: 7;
+position: fixed;
+margin-top: -50px;
+margin-left: -74px;
+width: 140vw;
+/* transform-origin: 0% 0%;
+transform: translate(0, -100%);
+transition: transform 2s cubic-bezier(0.77,0.2,0.05,1.0); */
+}
+
+.closed {
+    position: fixed;
+    margin-top: -50px;
+    margin-left: 18px;
+    cursor: pointer;
+    transform-origin: 0% -100%;
+    transform: translate(0, -100%);
+    transition: transform 2s cubic-bezier(0.77,0.2,0.05,1.0);
+    
+    /* transform: translate3d(0px, 500px);
+    transition: 3s; */
+    /* animation-name: example;
+    animation-duration: 4s; 
+    animation-direction: top; */
 }
 
 }
+
+
+@media screen and (max-width: 600px) {
+    div.opener {
+      display: none;
+    }
+    .background{
+        display: none;
+    }
+  
+    }
+
+  @media screen and (min-width: 600px) {
+    div.openermobile {
+      display: none; 
+    }
+
+  }
 
 @media (max-width: 600px) {
+
 	:root { --spacing: 32px; }
     body {
         z-index: 5;
         /* background-image: url("image\ 19.svg"); */
-        background-image: url("iPhone\ 14\ Plus\ -\ 1.png");
-        background-size: 100vw;
+        background-image: url("original_d9992cac98f6dbb759cfc4f2901063ed.gif");
+        background-size: 80vw;
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -67,9 +126,10 @@ img.popped {
     .firstimg {
         position: relative;
        display: grid;
-       grid-template-columns: repeat(11, 1fr);
-       grid-template-rows: repeat(8, 24vw);
-       grid-row-gap: 3.1vw;
+       width: 20px;
+       grid-template-columns: repeat(4, 1fr);
+       grid-template-rows: repeat(1, 24vw);
+       grid-row-gap: 0.7vw;
     /*    grid-column-gap: 15px;*/
     }
     
@@ -79,15 +139,34 @@ img.popped {
     }
     
     img.popped {
-        width: 161px;
+        width: 140px;
     }
     
-    .background {
-        padding-left: 1%;
-        padding-right: 1%;
-        width: 80px;
-        height:auto; 
-        margin-top: 5px
-    }
-    }
+    .openermobile {
+        z-index: 6;
+        position: fixed;
+        margin-top: -40px;
+        margin-left: -2px;
+        width: 40vw;
+        /* transform-origin: 0% 0%;
+        transform: translate(0, -100%);
+        transition: transform 2s cubic-bezier(0.77,0.2,0.05,1.0); */
+        }
+
+        .closed {
+            position: fixed;
+            margin-top: -50px;
+            margin-left: 18px;
+            cursor: pointer;
+            transform-origin: 0% -100%;
+            transform: translate(0, -100%);
+            transition: transform 2s cubic-bezier(0.77,0.2,0.05,1.0);
+            
+            /* transform: translate3d(0px, 500px);
+            transition: 3s; */
+            /* animation-name: example;
+            animation-duration: 4s; 
+            animation-direction: top; */
+        }
     
+}

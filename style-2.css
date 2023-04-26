@@ -1,9 +1,8 @@
 
-
 body {
     z-index: 5;
     /* background-image: url("image\ 19.svg"); */
-    background-image: url("Property\ 1=Main1.png");
+    background-image: url("original_d9992cac98f6dbb759cfc4f2901063ed.gif");
     background-size: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,10 +16,10 @@ body {
 } */
 
 .firstimg {
-    position: relative;
+    position: fixed;
    display: grid;
-   grid-template-columns: repeat(11, 1fr);
-   grid-template-rows: repeat(8, 5vw);
+   grid-template-columns: repeat(15, 1fr);
+   grid-template-rows: repeat(9, 3vw);
    grid-row-gap: 58px;
 /*    grid-column-gap: 15px;*/
 }
@@ -31,5 +30,16 @@ img {
 }
 
 img.popped {
-    width: 160px;
+    width: 120px;
 }
+
+.background {
+    z-index: 8;
+    position: relative;
+    padding-left: 0.2px;
+    padding-right: 0.2px;
+    padding-top: 93vh;
+    width: 60px;
+    height:auto; 
+}
+
